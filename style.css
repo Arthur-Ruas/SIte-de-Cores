@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap');@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&family=Sigmar+One&display=swap');
+
+*{
+    font-family: 'Kanit', sans-serif;
+}
+
+body{
+    background-color: #eee;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header{
+    text-align: center;
+}
+
+header h1{
+    font-size: 45px;
+}
+
+header h4{
+    font-size: 25px;
+    line-height: 0;
+}
+
+.eu{
+    color: #00beef;
+}
+
+/*---------------------------------------------------------------*/
+
+.cards{
+    height: 80vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.monte{
+    height: 70vh;
+    display: grid;
+    place-items: center; /*Não sei como eu fiz isso dar certo*/
+}
+
+.card{
+    height: 40vmin;
+    width: 30vmin;
+    border-radius: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+}
+
+.monte .card:nth-child(1){
+    background-color: #a7e6e9;
+    rotate: -2deg;
+    transition: .3s;
+}
+
+.monte .card:nth-child(2){
+    background-color: #fbbbc0;
+    transition: .3s;
+}
+
+.monte .card:nth-child(3){
+    background-color: #a787e1;
+    rotate: 2deg;
+    transition: .3s;
+}
+
+.monte:hover .card:nth-child(1){
+    transform: translate(-120px, 20px) scale(.80);
+    rotate: -15deg;
+    transition: .3s;
+}
+
+.monte:hover .card:nth-child(2){
+    transform: scale(1.10);
+    rotate: -5deg;
+    transition: .3s;
+}
+
+.monte:hover .card:nth-child(3){
+    transform: translate(120px, 20px) scale(1.30);
+    rotate: 10deg;
+    transition: .3s;
+}
+
+/*---------------------------------------------------------------*/
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+/*---------------------------------------------------------------*/
+
+.pagRosa, .pagPisc, .pagRoxo, .addNovaCor, .novaCor{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+
+    padding: 0 300px 100px 300px;
+    position: relative;
+}
+
+.pagRosa::after{
+    content: "";
+    background-color: #fbbbc0;
+    transform: skewY(-5deg);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.pagPisc::after{
+    content: "";
+    background-color: #a7e6e9;
+    transform: skewY(5deg);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.pagRoxo::after{
+    content: "";
+    background-color: #a787e1;
+    transform: skewY(-5deg);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+/*---------------------------------------------------------------*/
+
+.cor{
+    width: 25vmin;
+    height: 30vmin;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 25px;
+    box-shadow: 0px 10px 20px #444;
+    margin: 0;
+    transition: 0.2s;
+}
+
+.cor:hover{
+    transform: scale(1.05);
+}
+
+.nome{
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+/*---------------------------------------------------------------*/
+
+/*Rosa*/
+.rosa{
+    background-color: #fbbbc0;
+}
+
+.rosa1{
+    background-color: #f07989;
+}
+
+.rosa2{
+    background-color: #dc1755;
+}
+
+.rosa3{
+    background-color: #b31f46;
+}
+
+.rosa4{
+    background-color: #691c2c;
+}
+
+/*Piscina*/
+.piscina{
+    background-color: #a7e6e9;
+}
+
+.piscina1{
+    background-color: #5cd5db;
+}
+
+.piscina2{
+    background-color: #00ccd4;
+}
+
+.piscina3{
+    background-color: #19a7ad;
+}
+
+.piscina4{
+    background-color: #1f6164;
+}
+
+/*Roxo*/
+.roxo{
+    background-color: #a787e1;
+}
+
+.roxo1{
+    background-color: #9370db;
+}
+
+.roxo2{
+    background-color: #795db3;
+}
+
+.roxo3{
+    background-color: #483d8b;
+}
+
+.roxo4{
+    background-color: #332a5b;
+}
+
+/*---------------------------------------------------------------*/
+
+.parametros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.parametros h1{
+    font-size: 45px;
+}
+
+.valor{
+    max-width: 60px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.barra{
+    width: 80vmin;
+}
+
+.rgb{
+    position: relative;
+    bottom: 2px;
+    right: 5px;
+    font-size: 80px;
+    text-align: center;
+}
+
+.valor{
+    position: relative;
+    font-size: 35px;
+    bottom: 5px;
+    border: 0;
+    background: transparent;
+}
+
+.result{
+    height: 20vmin;
+    width: 30vmin;
+    background-color: #00ccd4;
+    border-radius: 20px;
+}
+
+#add{
+    background-color: #fff;
+    color: #00beef;
+    box-shadow: 0px 10px 20px 2px #aaa;
+    border-radius: 20px;
+    border: 0;
+    padding: 10px;
+    font-size: 30px;
+    transition: .1s;
+}
+
+#add:active{
+    transform: scale(0.95);
+}
