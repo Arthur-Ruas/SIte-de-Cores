@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores</title>
+    <link rel = "stylesheet" href = "./style.css">
+    <script defer src = "script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Bem Vindo ao Site de Teste de Cores.</h1>
+        <h4>Criador por<span class = "eu"> Arthur</span></h4>
+    </header>
+
+    <div class = "cards">
+        <div class = "monte">
+            <div class = "card">
+                <p class = "nome">#a787e1</p>
+            </div>
+            <div class = "card">
+                <p class = "nome">#fbbbc0</p>
+            </div>
+            <div class = "card">
+                <p class = "nome">#a7e6e9</p>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container">
+
+        <section class = "pagRosa">
+            <!--Rosa-->
+            <div class = "cor rosa">
+                <p class = "nome">#fbbbc0</p>
+            </div>
+            <div class = "cor rosa1">
+                <p class = "nome">#f07989</p>
+            </div>
+            <div class = "cor rosa2">
+                <p class = "nome">#dc1755</p>
+            </div>
+            <div class = "cor rosa3">
+                <p class = "nome">#b31f46</p>
+            </div>
+            <div class = "cor rosa3">
+                <p class = "nome">#691c2c</p>
+            </div>
+        </section>  
+
+        <section class = "pagPisc">
+            <!--Azul Piscina-->
+            <div class = "cor piscina">
+                <p class = "nome">#a7e6e9</p>
+            </div>
+            <div class = "cor piscina1">
+                <p class = "nome">#5cd5db</p>
+            </div>
+            <div class = "cor piscina2">
+                <p class = "nome">#00ccd4</p>
+            </div> 
+            <div class = "cor piscina3">
+                <p class = "nome">#19a7ad</p>
+            </div> 
+            <div class = "cor piscina4">
+                <p class = "nome">#1f6164</p>
+            </div> 
+        </section>
+            
+        <section class = "pagRoxo">
+            <!--Roxo-->
+            <div class = "cor roxo">
+                <p class = "nome">#a787e1</p>
+            </div>
+            <div class = "cor roxo1">
+                <p class = "nome">#9370db</p>
+            </div>
+            <div class = "cor roxo2">
+                <p class = "nome">#795db3</p>
+            </div> 
+            <div class = "cor roxo3">
+                <p class = "nome">#483d8b</p>
+            </div> 
+            <div class = "cor roxo4">
+                <p class = "nome">#332a5b</p>
+            </div> 
+        </section>    
+
+        <section class = "addNovaCor">
+            <div class = "parametros">
+                <h1>Deseja colocar uma novar cor?</h1>
+                <div class = "vermelho">
+                    <label class = "rgb">R</label>
+                    <input class = "barra" type = "range" class = "red" id = "red" min = "0" max = "255" value = "0">
+                    <input class = "valor" type = "text" id = "redText" readonly>
+                </div>
+
+                <div class = "verde">
+                    <label class = "rgb">G</label>
+                    <input class = "barra" type = "range" class = "green" id = "green" min = "0" max = "255" value = "0">
+                    <input class = "valor" type = "text" id = "greenText" readonly>
+                </div>
+
+                <div class = "azul">
+                    <label class = "rgb">B</label>
+                    <input class = "barra" type = "range" class = "blue" id = "blue" min = "0" max = "255" value = "0">
+                    <input class = "valor" type = "text" id = "blueText" readonly>
+                </div>
+                <div class = "result" id="resultado"></div>
+                <button id = "add">Adicionar Cor</button>
+            </div>
+            <div class = "novaCor"></div>
+        </section>
+    </div>
+</body>
+</html>
